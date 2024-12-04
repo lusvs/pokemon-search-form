@@ -4,8 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokedex</title>  
+    <link rel="stylesheet" href="/src/styles/reset.css">
+
 </head>
 <body>
-    
+    <h1>Serch Pokemon</h1>
+    <form id="pokemon-form">
+        <label for="">Pokemon Name:</label>
+        <input type="text" id="pokemon-name" placeholder="write the pokemon's name" required>
+        <button type="submit">search</button>
+
+    </form>
+    <div id="pokemon-info"></div>
+    <script src="/src/scripts/search-form.js"></script>
 </body>
 </html>
