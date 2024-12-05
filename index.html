@@ -1,21 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokedex</title>  
+    <title>Pokedex</title>
+    <link rel="shortcut icon" href="src/assets/img/pokeball.svg" type="image/x-icon">
     <link rel="stylesheet" href="/src/styles/reset.css">
-
+    <link rel="stylesheet" href="/src/styles/style.css">
 </head>
-<body>
-    <h1>Serch Pokemon</h1>
-    <form id="pokemon-form">
-        <label for="">Pokemon Name:</label>
-        <input type="text" id="pokemon-name" placeholder="write the pokemon's name" required>
-        <button type="submit">search</button>
 
-    </form>
-    <div id="pokemon-info"></div>
+<body>
+    <header>       
+         <div class="header-logo">
+             <img src="src/assets/img/pokeball.svg" alt="">
+             <h1>PoKédex</h1>
+         </div>
+
+        <div class="form-hero">
+            <form id="pokemon-form">
+                <button type="submit"><img src="src/assets/img/search.svg" alt=""></button>
+                <input class="pokemon-name" type="text" id="pokemon-name" placeholder="write the pokemon's name"
+                    required>
+            </form> <!--form-hero-->
+        </div>
+
+    </header>
+
+    <main>
+        <div id="pokemon-info"></div>
+    </main>
     <script src="/src/scripts/search-form.js"></script>
 </body>
+
 </html>
